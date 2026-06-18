@@ -2,23 +2,24 @@
 
 ## Overview
 
-Salesforce Validation Rule Manager is a web-based application developed using React.js, Node.js, and Salesforce Tooling API. The application allows users to securely authenticate with Salesforce using OAuth 2.0, retrieve validation rules from their Salesforce organization, view their current status, and manage them through an intuitive dashboard.
+Salesforce Validation Rule Manager is a web-based application developed using React.js, Node.js, Express.js, and Salesforce APIs. The application enables users to securely authenticate with Salesforce using OAuth 2.0, retrieve validation rules from their Salesforce organization, view their current status, and activate or deactivate them directly from the application.
 
-This project demonstrates Salesforce integration, API consumption, OAuth authentication, and modern full-stack web development practices.
+The project demonstrates Salesforce integration, OAuth authentication, Tooling API usage, Metadata API deployment, and modern full-stack web development practices.
 
----
+
 
 ## Features
 
-* Secure Salesforce OAuth 2.0 Login
+* Secure Salesforce OAuth 2.0 Authentication
 * Retrieve Validation Rules using Salesforce Tooling API
 * Display Validation Rules with Active/Inactive Status
-* Enable or Disable Validation Rules through the User Interface
-* Deploy Workflow Integration
-* Responsive and User-Friendly Dashboard
+* Enable or Disable Individual Validation Rules
+* Real-Time Validation Rule Updates using Salesforce Metadata API
+* Direct Deployment of Changes to Salesforce
+* Responsive and User-Friendly Interface
 * Backend API Integration using Express.js
 
----
+
 
 ## Technologies Used
 
@@ -37,117 +38,117 @@ This project demonstrates Salesforce integration, API consumption, OAuth authent
 * Axios
 * JSForce
 
+### Programming Languages
+
+* Java
+* JavaScript
+
 ### Salesforce
 
 * Salesforce Developer Org
 * Connected App
 * OAuth 2.0 Authentication
 * Tooling API
+* Metadata API
 
----
+### Tools
+
+* Git
+* GitHub
+* Vercel
+
+
 
 ## System Architecture
 
-```text
 React Frontend
-      │
-      ▼
+│
+▼
 Node.js / Express Backend
-      │
-      ▼
+│
+▼
 Salesforce OAuth 2.0
-      │
-      ▼
-Salesforce Tooling API
-```
+│
+▼
+Tooling API + Metadata API
 
 ---
 
 ## Project Structure
 
-```text
-salesforce-validation-rule-manager/
-│
-├── src/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── server/
-│   └── server.js
-│
-├── public/
-│
-├── package.json
-├── vite.config.js
-└── README.md
-```
+salesforce-metadata-manager/
 
----
+├── src/
+
+│   ├── App.jsx
+
+│   ├── AuthCallback.jsx
+
+│   ├── main.jsx
+
+│   └── index.css
+
+├── server/
+
+│   └── server.js
+
+├── public/
+
+├── package.json
+
+├── vite.config.js
+
+└── README.md
+
+
 
 ## Installation and Setup
 
 ### Clone Repository
 
-```bash
-git clone https://github.com/sreekanth1148/salesforce-validation-rule-manager.git
-```
+git clone https://github.com/sreekanth1148/salesforce-metadata-manager.git
 
 ### Install Frontend Dependencies
 
-```bash
 npm install
-```
 
 ### Start Frontend
 
-```bash
 npm run dev
-```
 
 ### Install Backend Dependencies
 
-```bash
 cd server
+
 npm install
-```
 
 ### Start Backend Server
 
-```bash
 node server.js
-```
 
----
+
 
 ## Assignment Requirements Implemented
 
 * Salesforce Developer Org Setup
-* Validation Rules Creation on Account Object
+* Account Object Validation Rules Creation
 * Connected App Configuration
 * OAuth 2.0 Authentication
 * Tooling API Integration
 * Validation Rule Retrieval
-* Validation Rule Status Management
-* Deploy Workflow Integration
-* Modern User Interface
+* Active/Inactive Status Display
+* Validation Rule Enable/Disable Functionality
+* Salesforce Metadata API Deployment
+* Direct Validation Rule Updates in Salesforce
+* React.js Frontend and Node.js Backend Development
+* Online Deployment using Vercel
 
----
 
-## Future Enhancements
-
-* Metadata API Integration for Real-Time Validation Rule Deployment
-* Bulk Enable/Disable Validation Rules
-* User Activity Logs
-* Advanced Dashboard Analytics
-* Cloud Deployment and CI/CD Integration
-
----
 
 ## Author
 
-**Avula Sreekanth**
+Avula Sreekanth
 
-B.Tech (Computer Science Engineering)
+Associate Software Engineer
 
- 
+GitHub: https://github.com/sreekanth1148
