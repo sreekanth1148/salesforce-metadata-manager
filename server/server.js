@@ -14,7 +14,7 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 const REDIRECT_URI =
-  "http://localhost:5173/auth/callback";
+  "https://salesforce-metadata-manager.vercel.app/auth/callback";
 
 // LOGIN API
 app.post("/token", async (req, res) => {

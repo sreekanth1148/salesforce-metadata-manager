@@ -9,7 +9,7 @@ function AuthCallback() {
     console.log("Authorization Code:", code);
 
     if (code) {
-      fetch("http://localhost:3000/token", {
+      fetch("https://salesforce-metadata-manager-api-sreekanth.onrender.com/token",  {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

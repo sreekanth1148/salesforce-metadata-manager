@@ -7,7 +7,7 @@ function App() {
     const code = new URLSearchParams(window.location.search).get("code");
 
     if (code) {
-      fetch("http://localhost:3000/token", {
+      fetch("https://salesforce-metadata-manager-api-sreekanth.onrender.com/token", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,8 +37,7 @@ function App() {
       "3MVG97L7PWbPq6UyAMgF9gXGDlxYdmm9MPSusbY5rk7Zx2lAlZDy2fSHe_xpziyeMfkEIMM5r263vxc3IdUUw";
 
     const redirectUri =
-      "http://localhost:5173/auth/callback";
-
+  "https://salesforce-metadata-manager.vercel.app/auth/callback";
     const authUrl =
       `https://login.salesforce.com/services/oauth2/authorize` +
       `?response_type=code` +
@@ -57,7 +56,7 @@ function App() {
         localStorage.getItem("instance_url");
 
       const response = await fetch(
-        "http://localhost:3000/validation-rules",
+  "https://salesforce-metadata-manager-api-sreekanth.onrender.com/validation-rules",
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -93,7 +92,7 @@ function App() {
         localStorage.getItem("instance_url");
 
       const response = await fetch(
-        "http://localhost:3000/deploy-rule",
+  "https://salesforce-metadata-manager-api-sreekanth.onrender.com/deploy-rule",
         {
           method: "POST",
           headers: {
