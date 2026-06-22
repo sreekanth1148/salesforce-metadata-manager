@@ -143,7 +143,16 @@ node server.js
 * React.js Frontend and Node.js Backend Development
 * Online Deployment using Vercel
 
+## Deployment
 
+Frontend (Vercel):
+https://salesforce-metadata-manager.vercel.app
+
+Backend (Render):
+https://salesforce-metadata-manager-api-sreekanth.onrender.com
+
+GitHub Repository:
+https://github.com/sreekanth1148/salesforce-metadata-manager
 
 ## Author
 
