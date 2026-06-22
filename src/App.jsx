@@ -37,7 +37,7 @@ function App() {
       "3MVG97L7PWbPq6UyAMgF9gXGDlxYdmm9MPSusbY5rk7Zx2lAlZDy2fSHe_xpziyeMfkEIMM5r263vxc3IdUUw";
 
     const redirectUri =
-  "https://salesforce-metadata-manager.vercel.app/auth/callback";
+"https://salesforce-metadata-manager.vercel.app";
     const authUrl =
       `https://login.salesforce.com/services/oauth2/authorize` +
       `?response_type=code` +
